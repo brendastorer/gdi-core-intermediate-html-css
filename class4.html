@@ -77,23 +77,28 @@
         </section>
         <section class="media-queries">
           <h2>Media Queries</h2>
-          <div class="example"></div>
-          <pre><code>background-color: grey;
-@media screen and (min-width: 300px) and (max-width: 600px)
-{
-background-color: red;
+          <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code></pre>
+          <pre class="fragment"><code>@media (min-width: 801px) {
+  html {
+    background: darkcyan;
+  }
 }
-@media screen and (min-width: 900px) and (max-width: 1200px)
-{
-background-color: blue;
+@media (min-width: 401px) and (max-width: 800px) {
+  html {
+    background: khaki;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    background: salmon;
+  }
 }</code></pre>
-          <pre class="fragment"><code>&lt;meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"&gt;</code></pre>
         </section>
         <section>
           <h2>Media Queries</h2>
           <p>Frequently used in responsive web design</p>
           <p><a href="http://mediaqueri.es" target="_blank">http://mediaqueri.es</a></p>
-          <p><a href="http://buildresponsively.com/" target="_blank">Example: Build Responsively</a></p>
+          <p><a href="https://css-tricks.com/logic-in-media-queries/" target="_blank">CSS Tricks &mdash; Logic in Media Queries</a></p>
         </section>
       </section>
 
@@ -102,6 +107,7 @@ background-color: blue;
         <section>
           <h2>Responsive Design</h2>
           <p>Design by thinking of the structure of your website, and how different elements fit into the structure.</p>
+          <p>Let the content guide you. Keep it simple. Only change what you need to.</p>
         </section>
         <section>
           <h2>Responsive Design</h2>
@@ -126,36 +132,15 @@ background-color: blue;
           <h2>Responsive Design and Media Queries</h2>
           <p>Most of our styling will stay the same</p>
           <p>Colors, padding, etc.</p>
-          <p>Only change what needs to for each view</p>
         </section>
         <section>
           <h2>Responsive Design and Media Queries</h2>
-          <p class="yellow">Tablet example</p>
-          <pre><code contenteditable>/** Tablet view **/
-@media screen and (max-width: 960px){
-  h1 {
-    font-size: 1.1em;
-    line-height: 40px;
-  }
-  header nav li{
-    line-height: 40px;
+          <p class="yellow">Change the font size for "Women in Computing" to be 1.5em on smaller screens (tablet and below)</p>
+          <pre><code contenteditable class="fragment">@media (max-width: 960px) {
+  header h1 {
+    font-size: 1.5em;
   }
 }</code></pre>
-          <p class="fragment">In tablet view, we don't need the header to be so big</p>
-        </section>
-        <section>
-          <h2>Responsive Design and Media Queries</h2>
-          <p class="yellow">Mobile example</p>
-          <pre><code contenteditable>/** Mobile view **/
-@media screen and (max-width: 480px){
-  #famous article.woman {
-    float: none;
-    margin: 5px auto;
-    padding: 2%;
-    width: 80%
-  }
-}</code></pre>
-          <p class="fragment">In mobile view, we don't want the bios to float</p>
         </section>
       </section>
 
@@ -163,16 +148,15 @@ background-color: blue;
       <section>
         <section>
           <h2>Let's Develop It</h2>
-          <p>Enhance our Women in Computing web site to use HTML5 &amp; CSS3</p>
+          <p>Enhance our Women in Computing web site to be responsive!</p>
         </section>
         <section>
           <h2>Let's Develop It</h2>
           <ul>
-            <li>Use media queries to make our site responsive</li>
-            <li>Start small</li>
-            <li>You will have a little bit more time than normal</li>
-            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/css3-media-queries" target="_blank">CSS3 and Media Queries</a></li>
-            <li>Useful tutorial <a href="http://webdesignerwall.com/tutorials/responsive-design-in-3-steps" target="_blank">Responsive Design in 3 Easy Steps</a></li>
+            <li>All of the content should fit within the viewport on all screen sizes.</li>
+            <li>For mobile sized screens, make the women's bios stacked on top of each other (only 1 across instead of 3 across).</li>
+            <li>In Organizations, don't show the logos on hover on mobile screens.</li>
+            <li>For tablet and below, align the links in the navigation in the all the way to the left, and have them stack on top of each other.</li>
           </ul>
         </section>
       </section>
@@ -181,27 +165,17 @@ background-color: blue;
       <section>
         <section>
           <h2>Tools &amp; Deployment</h2>
-          <p class="yellow">Remember that HTML5 is still new</p>
+          <p class="yellow">Remember that HTML & CSS are constantly evolving, and browsers adopt new features at different rates.</p>
           <p>That means we have to be aware of what each browser can do</p>
           <p>And make sure that people don't lose functionality</p>
         </section>
         <section>
           <h2><a href="http://caniuse.com/" target="_blank">Can I Use?</a></h2>
-          <img src="images/screenshots/caniuse-border-radius.png" alt=""/>
-        </section>
-        <section>
-          <h2><a href="http://html5readiness.com/" target="_blank">HTML5 &amp; CSS3 Readiness</a></h2>
-          <img src="images/screenshots/html5-css3-readiness.png" alt=""/>
+          <img src="images/screenshots/caniuse-transitions.png" alt=""/>
         </section>
         <section>
           <h2><a href="http://html5please.com/" target="_blank">HTML5 Please</a></h2>
           <img src="images/screenshots/html5-please.png" alt=""/>
-        </section>
-        <section>
-          <img src="images/html5rocks.png" alt=""/>
-          <p>
-            <a href="http://www.html5rocks.com" target="_blank">http://www.html5rocks.com</a>
-          </p>
         </section>
         <section>
           <img src="images/Mozilla-Developer-Network.png" alt=""/>
@@ -214,22 +188,6 @@ background-color: blue;
           <p>
             <a href="http://html5doctor.com" target="_blank">http://html5doctor.com</a>
           </p>
-        </section>
-        <section>
-          <h2>
-            <a href="http://code.google.com/p/html5shiv/" target="_blank">HTML5Shiv</a>
-          </h2>
-          <p>HTML5 IE enabling script</p>
-        </section>
-        <section>
-          <a href="http://modernizr.com/" target="_blank">
-            <img src="images/modernizr.png" alt=""/>
-          </a>
-          <ul>
-            <li>JavaScript library that detects HTML5 and CSS3 features in the user’s browser</li>
-            <li>Works well with polyfills - a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively</li>
-            <li>A lot of the code is in JavaScript, but you can look here for how <a href="http://modernizr.com/docs/#features-css" target="_blank" >Modernizr helps with CSS</a></li>
-          </ul>
         </section>
         <section>
           <h2>
@@ -259,22 +217,14 @@ background-color: blue;
             <li>It generates for you a clean customizable template with just what you need to start!</li>
           </ul>
         </section>
-      </section>
-
-      <!-- Let's Develop It-->
-      <section>
         <section>
-          <h2>Let's Develop It</h2>
+          <a href="http://modernizr.com/" target="_blank">
+            <img src="images/modernizr.png" alt=""/>
+          </a>
           <ul>
-            <li>Look through the HTML5 tools in the previous section and try to update our site to work with older browsers</li>
-            <li>
-              Stuck or want something new?
-              <ul>
-                <li>Use <a href="http://www.initializr.com/" target="_blank">Initializr</a> to create your own blank template</li>
-                <li>Look at the structure of the HTML and CSS to learn new ways of building a site structure</li>
-                <li>Use all your knowledge from the past classes to begin building something uniquely yours!</li>
-              </ul>
-            </li>
+            <li>JavaScript library that detects HTML5 and CSS3 features in the user’s browser</li>
+            <li>Works well with polyfills - a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively</li>
+            <li>A lot of the code is in JavaScript, but you can look here for how <a href="http://modernizr.com/docs/#features-css" target="_blank" >Modernizr helps with CSS</a></li>
           </ul>
         </section>
       </section>

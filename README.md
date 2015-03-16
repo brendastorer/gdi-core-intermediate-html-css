@@ -1,6 +1,8 @@
+*This is a work in progress by me, a Girl Develop It instructor currently teaching this course in NYC. A lot of the material is over 2 years old, so I am working on updating it while I teach.*
+
 # CORE INTERMEDIATE HTML/CSS
 
-This is the official Girl Develop It Core Intermediate HTML/CSS curriculum. It was developed through the contributions of Garann Means, Alexis Goldstein, Julie Pagano, Lindsey Bieda, and Izzy Johnston.
+This is from the official Girl Develop It Core Intermediate HTML/CSS curriculum. It was developed through the contributions of Garann Means, Alexis Goldstein, Julie Pagano, Lindsey Bieda, and Izzy Johnston.
 
 The course is meant to be taught in 4 two-hour sections or 2 4-hour sections. The total course material, including time for in-class practice, should be approximately 8 hours. It is highly recommended that students be required to take the Core HTML/CSS curriculum, or demonstrate knowledge of HTML/CSS prior to attending class, as knowledge of HTML and CSS are assumed.
 
@@ -14,12 +16,12 @@ Present a review of HTML and CSS, build a basic html page using industry convent
 
 Learn how to use HTML form elements to add a (non-functioning) form to the basic html page.
 
-Introduction to HTML5 will cover the history of HTML5, the advances, the drawbacks and the concepts of semantics. It will introduce semantic elements and form additions. Students will update the html page to use semantic elements and forms. 
+Introduction to HTML5 will cover the history of HTML5, the advances, the drawbacks and the concepts of semantics. It will introduce semantic elements and form additions. Students will update the html page to use semantic elements and forms.
 
 ### Class 2
 Introduction to CSS3
 
-Students will be introduced to new CSS3 properties and abilities, including rounded corners, drop shadows, gradients, opacity, @font-face. Students will also learn to use transformations, transitions, and animation. Finally, students will learn about the new selectors and pseudo-selectors that can be used in CSS3. 
+Students will be introduced to new CSS3 properties and abilities, including rounded corners, drop shadows, gradients, opacity, @font-face. Students will also learn to use transformations, transitions, and animation. Finally, students will learn about the new selectors and pseudo-selectors that can be used in CSS3.
 
 Time permitting, students will learn about HTML5 and CSS3 columns and Flexbox.
 
@@ -33,15 +35,15 @@ This class will cover additions to HTML5 beyond semantics. A significant portion
 
 Introduction to Responsive Design and Compatibility
 
-This class will be split into two topics. The first will cover the concepts of responsive design and focus on the use of media queries. As responsive design can be its own course, the concepts will be covered broadly, rather than deeply. 
+This class will be split into two topics. The first will cover the concepts of responsive design and focus on the use of media queries. As responsive design can be its own course, the concepts will be covered broadly, rather than deeply.
 
 The second topic will be about compatibility with older browsers. This will include use of libraries such as Modernizr or HTML5Shiv and will also discuss the struggles of designing a website for compatibility.
 
-## Cloning Reveal submodule 
+## Cloning Reveal submodule
 
-Reveal is a submodule. To clone it correctly or learn more, see [these instructions](http://git-scm.com/book/en/Git-Tools-Submodules#Cloning-a-Project-with-Submodules). 
+Reveal is a submodule. To clone it correctly or learn more, see [these instructions](http://git-scm.com/book/en/Git-Tools-Submodules#Cloning-a-Project-with-Submodules).
 
-## Theme customization in Reveal 
+## Theme customization in Reveal
 
 You can change theme colors by changing the theme css to any of the following options:
 ```html
