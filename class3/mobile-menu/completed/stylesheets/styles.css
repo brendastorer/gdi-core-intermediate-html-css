@@ -1,0 +1,96 @@
+/* Mobile
+@media (max-width: 550px) {
+}
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,300);
+
+body {
+  background-color: #248daf;
+  font-family: 'Raleway', helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-header {
+  padding: 1em;
+  position: relative;
+}
+
+.site-menu {
+  float: right;
+}
+
+/* desktop */
+@media (min-width: 551px) {
+  .site-menu {
+    display: block !important;
+  }
+}
+
+/* mobile */
+@media (max-width: 550px) {
+  .site-menu {
+    display: none;
+    background-color: black;
+    float: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 56px;
+  }
+}
+
+.site-menu li {
+  display: inline-block;
+  font-size: 1.3em;
+  margin-left: 2em;
+}
+
+/* mobile */
+@media (max-width: 550px) {
+  .site-menu li {
+    background-color: black;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0.5em 1em;
+  }
+
+  .site-menu li:hover {
+    background-color: #ff6600;
+  }
+}
+
+.menu-icon {
+  display: none;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+/* mobile */
+@media (max-width: 550px) {
+  .menu-icon {
+    display: block;
+  }
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
+}
