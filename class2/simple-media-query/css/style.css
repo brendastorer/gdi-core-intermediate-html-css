@@ -1,0 +1,39 @@
+/* This css example styles mobile first
+Default styles are for mobile. */
+
+html {
+  background: salmon;
+}
+
+/* Tablet and above */
+@media (min-width: 501px) {
+  html {
+    background: khaki;
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 961px) {
+  html {
+    background: darkcyan;
+  }
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: white;
+  height: 200px;
+  margin: 20px 2.5%;
+}
+
+/* Desktop and above */
+@media (min-width: 961px) {
+  section {
+    float: left;
+    width: 45%;
+  }
+}

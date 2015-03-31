@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Class 3 ~ Intermediate HTML/CSS ~ Girl Develop IT</title>
+    <title>Class 4 ~ Intermediate HTML/CSS ~ Girl Develop IT</title>
 
     <meta name="description" content="This is the official Girl Develop It Intermediate Core HTML/CSS curriculum. It was developed through the contributions of Julie Pagano, Jen Myers, Alexis Goldstein and Izzy Johnston.
 
@@ -41,9 +41,10 @@
     <div class="slides">
       <!-- Opening slide -->
       <section>
-        <img src="images/gdi_logo_badge.png" alt=""/>
-        <h3>Intermediate HTML and CSS</h3>
-        <h4>Class 3</h4>
+        <img src="images/gdi_logo_badge.png" alt="" height="400" width="400"/>
+        <h3>Intermediate HTML &amp; CSS</h3>
+        <h4>Class 4</h4>
+        <a href="http://bit.ly/1G6KiZ7">http://bit.ly/1G6KiZ7</a>
       </section>
 
       <!-- Welcome-->
@@ -59,6 +60,285 @@
             <li>Have fun</li>
           </ul>
         </div>
+      </section>
+
+      <!-- Transitions-->
+      <section>
+        <section>
+          <h2>Transitions</h2>
+          <p>Allow property changes in CSS values to occur smoothly over a specified duration</p>
+          <p class="fragment">Create some awesome effects without any JavaScript</p>
+        </section>
+        <section>
+          <h2>Transition Triggers</h2>
+          <ul>
+            <li>Hover</li>
+            <li>Mouse click</li>
+            <li>Focus state</li>
+            <li>Active state</li>
+            <li>Changes to the element</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Transition Properties</h2>
+          <ul>
+            <li>transition-property</li>
+            <li>transition-duration</li>
+            <li>transition-delay</li>
+            <li>transition-timing-function</li>
+          </ul>
+        </section>
+        <section>
+          <h2>transition-property</h2>
+          <p>the names of CSS properties that should be transitioned</p>
+          <pre><code>
+.example1 { transition-property: background-color; }
+          </code></pre>
+          <p>set to <strong>all</strong> to transition all CSS properties</p>
+          <pre><code>
+.example2 { transition-property: all; }
+          </code></pre>
+        </section>
+        <section>
+          <h2>transition-property</h2>
+          <p>
+            <a href="http://leaverou.github.com/animatable/" target="_blank">animatable examples</a>
+          </p>
+          <p>
+            <a href="http://www.w3.org/TR/css3-transitions/#animatable-css" target="_blank">full list of supported properties</a>
+          </p>
+        </section>
+        <section class="transition-duration">
+          <h2>transition-duration</h2>
+          <p>the number of seconds or milliseconds a transition animation should take to complete</p>
+          <pre><code>
+.example1 { transition-duration: 2s; }
+          </code></pre>
+          <div class="sliders" style="width:40%;">
+            <p>
+              <span class="value">2</span>s duration
+              <input type="range" min="0" max="10" value="3">
+            </p>
+          </div>
+          <div class="example">
+          </div>
+        </section>
+        <section class="transition-delay">
+          <h2>transition-delay</h2>
+          <p>delay transitions from the moment a trigger happens</p>
+          <pre><code>.example1 { transition-delay: 0s; }
+.example2 { transition-delay: 1s; }
+.example3 { transition-delay: 2s; }
+.example4 { transition-delay: 3s; }</code></pre>
+          <article>
+            <div class="example4">3</div>
+            <div class="example3">2</div>
+            <div class="example2">1</div>
+            <div class="example1">0</div>
+          </article>
+        </section>
+        <section class="transition-timing-function">
+          <h2>transition-timing-function</h2>
+          <p>determines how intermediate values are calculated</p>
+          <pre><code>.example { transition-timing-function: ease; }</code></pre>
+          <article>
+            <div class="ease">ease</div>
+            <div class="linear">linear</div>
+            <div class="ease-in">ease-in</div>
+            <div class="ease-out">ease-out</div>
+            <div class="ease-in-out">ease-in-out</div>
+            <div class="cubic-bezier">cubic-bezier</div>
+          </article>
+          <a href="http://cubic-bezier.com/" target="_blank">cubic-bezier</a>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <a href="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS Tricks &mdash; Transition Almanac</a>
+          <a href="http://www.css3maker.com/css3-transition.html" target="_blank">CSS3 Maker &mdash; Transitions</a>
+          <a href="http://caniuse.com/#search=transitions" target="_blank">Can I Use? &mdash; Transitions</a>
+        </section>
+        <section>
+          <h2>Let's make our mobile menu smooth!</h2>
+          <ul>
+            <li>Use transition to bring the menu in from the top of the page.</li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Transformations-->
+      <section>
+        <section>
+          <h2>Transforms</h2>
+          <p>Allow elements rendered by CSS to be transformed in space.</p>
+        </section>
+        <section>
+          <h2>Transform: Scale</h2>
+          <p>scales the element</p>
+          <p>transform:  scale(sx[, sy]);</p>
+          <article class="transform-scale">
+            <div class="example1">
+              scale(2);
+            </div>
+
+            <div class="example2">
+              scale(0.5);
+            </div>
+
+            <div class="example4">
+              scale(1, 0.5);
+            </div>
+
+            <div class="example3">
+              scale(0.5, 1);
+            </div>
+          </article>
+        </section>
+        <section>
+          <h2>Transform: Rotate</h2>
+          <p>rotates the element degrees around its origin</p>
+          <p>transform: rotate(angle);</p>
+          <article class="transform-rotate">
+            <div class="example1">
+              rotate(45deg);
+            </div>
+
+            <div class="example2">
+              rotate(-45deg);
+            </div>
+
+            <div class="example3">
+              rotate(-90deg);
+            </div>
+
+            <div class="example4">
+              rotate(180deg);
+            </div>
+          </article>
+        </section>
+        <section>
+          <h2>Transform: Translate</h2>
+          <p>move element using x and y coordinates</p>
+          <p>transform: translate(ax[, ay]);</p>
+          <article class="transform-translate">
+            <div class="example1">
+              translate(20px);
+            </div>
+
+            <div class="example2">
+              translate(0, 20px);
+            </div>
+
+            <div class="example3">
+              translate(-20px, 20px);
+            </div>
+          </article>
+        </section>
+        <section>
+          <h2>Transform-origin</h2>
+          <p>the x and y origin for transformation</p>
+          <p>transform-origin: x-offset y-offset;</p>
+          <article class="transform-origin">
+            <div class="example1">
+              transform-origin(top, left)
+            </div>
+
+            <div class="example2">
+              transform-origin(50%, 50%)
+            </div>
+
+            <div class="example3">
+              transform-origin(0, 50px)
+            </div>
+          </article>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <a href="https://css-tricks.com/almanac/properties/t/transform/" target="_blank">CSS Tricks &mdash; Transform Almanac</a>
+          <a href="http://desandro.github.com/3dtransforms/" target="_blank">3D Transforms examples with a breakdown</a>
+          <a href="http://www.css3maker.com/css3-transform.html" target="_blank">CSS3 Maker &mdash; Transform</a>
+          <a href="http://caniuse.com/#search=transforms" target="_blank">Can I Use? &mdash; Transforms</a>
+        </section>
+      </section>
+
+      <!-- Animations-->
+      <section>
+        <section>
+          <h2>Intro to Animations</h2>
+          <p>Animate transitions from one CSS style configuration to another</p>
+        </section>
+        <section>
+          <h2>Benefits of CSS3 Animations</h2>
+          <h4>Over JavaScript Animations</h4>
+          <ul>
+            <li>Easy for simple animations (no JavaScript required)</li>
+            <li>Better Browser Performance</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <h4>Two Components</h4>
+          <ol>
+            <li>Style describing the CSS animation</li>
+            <li>A set of keyframes that indicate the start and end states of the animation's style</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Animations</h2>
+          <pre><code>@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}</code></pre>
+        </section>
+        <section>
+          <h2>Animate properties</h2>
+          <ul>
+            <li>animation-name (name you choose)</li>
+            <li>animation-duration (s or ms)</li>
+            <li>animation-iteration-count (X or infinite)</li>
+            <li><a href="http://www.w3schools.com/cssref/css3_pr_animation-direction.asp" target="_blank">animation-direction</a></li>
+            <li><a href="http://www.w3schools.com/cssref/css3_pr_animation-timing-function.asp" target="_blank">animation-timing-function</a></li>
+            <li><a href="http://www.w3schools.com/cssref/css3_pr_animation-fill-mode.asp" target="_blank">animation-fill-mode</a></li>
+            <li>animation-delay (s or ms)</li>
+          </ul>
+          <pre><code>/* Shorthand */
+.element-to-animate {
+  animation: NAME-YOUR-ANIMATION 5s infinite;
+}</code></pre>
+        </section>
+        <section>
+          <h2>What about browser support for animations?</h2>
+          <a href="http://caniuse.com/#search=css3%20animation" target="_blank">Can I Use?</a>
+        </section>
+        <section>
+          <h2>Resources</h2>
+          <a href="https://css-tricks.com/almanac/properties/a/animation/" target="_blank">CSS Tricks &mdash; Animations Almanac</a><br>
+          <a href="https://css-tricks.com/snippets/css/keyframe-animation-syntax/" target="_blank">CSS Tricks &mdash; Animations Keyframes syntax</a><br>
+          <a href="http://daneden.github.io/animate.css/" target="_blank">Animate.css</a><br>
+        </section>
+      </section>
+      <section>
+        <h2>Let's play!</h2>
+        <ul>
+          <li>Add a subtle transition to all links on the page.</li>
+          <li>Use the transform scale property on the women's images when a mouse hovers over them so that they increase in size.</li>
+          <li>Add an animation to the Women in Computing Title. Let's make it animate in from the left.</li>
+        </ul>
+      </section>
+
+      <section>
+        <section>
+          <h2>HTML5 Features</h2>
+        </section>
       </section>
 
       <!-- What is Microdata-->
@@ -187,11 +467,11 @@
           <h2>Microdata Structure</h2>
           <p class="yellow">Itemprop</p>
           <pre><code contenteditable>
-&lt;div itemscope itemtype ="http://schema.org/Organization">
-   &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+&lt;div itemscope itemtype="http://schema.org/Organization">
+   &lt;span itemprop="name">L'Amourita Pizza&lt;/span>
    Located at 123 Main St, Albuquerque, NM.
-   Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
-   &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+   Phone: &lt;span itemprop="tel">206-555-1234&lt;/span>
+   &lt;a href="http://pizza.com" itemprop="url">http://pizza.com&lt;/a>
 &lt;/div>
           </code></pre>
         </section>
@@ -217,11 +497,11 @@
             <h2>Nested Microdata</h2>
             <p>We have specified ALMOST everything for our <strong>Organization</strong>, but we still don't have entries for the address</p>
             <pre><code contenteditable>
-  &lt;div itemscope itemtype ="http://schema.org/Organization">
-     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+  &lt;div itemscope itemtype="http://schema.org/Organization">
+     &lt;span itemprop="name">L'Amourita Pizza&lt;/span>
      Located at 123 Main St, Albuquerque, NM.
-     Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
-     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+     Phone: &lt;span itemprop="tel">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop="url">http://pizza.com&lt;/a>
   &lt;/div>
             </code></pre>
             <p class ="fragment">Addresses are their own unique <strong>itemtype</strong>. So we need to <em>nest</em> the address information inside a new element with the <strong>itemtype</strong> set to Address</p>
@@ -229,16 +509,16 @@
           <section>
             <h2>Nested Microdata</h2>
             <pre><code contenteditable>
-  &lt;div itemscope itemtype ="http://schema.org/Organization">
-     &lt;span itemprop ="name">L'Amourita Pizza&lt;/span>
+  &lt;div itemscope itemtype="http://schema.org/Organization">
+     &lt;span itemprop="name">L'Amourita Pizza&lt;/span>
      Located at
-      &lt;span itemprop ="address" itemscope itemtype ="http://schema.org/PostalAddress">
-        &lt;span itemprop ="streetAddress">123 Main St&lt;/span>,
-        &lt;span itemprop ="addressLocality">Albuquerque&lt;/span>,
-        &lt;span itemprop ="addressRegion">NM&lt;/span>.
+      &lt;span itemprop="address" itemscope itemtype ="http://schema.org/PostalAddress">
+        &lt;span itemprop="streetAddress">123 Main St&lt;/span>,
+        &lt;span itemprop="addressLocality">Albuquerque&lt;/span>,
+        &lt;span itemprop="addressRegion">NM&lt;/span>.
       &lt;/span>
-     Phone: &lt;span itemprop ="tel">206-555-1234&lt;/span>
-     &lt;a href="http://pizza.com" itemprop ="url">http://pizza.com&lt;/a>
+     Phone: &lt;span itemprop="tel">206-555-1234&lt;/span>
+     &lt;a href="http://pizza.com" itemprop="url">http://pizza.com&lt;/a>
   &lt;/div>
             </code></pre>
          </section>
